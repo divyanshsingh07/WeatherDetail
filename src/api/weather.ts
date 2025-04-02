@@ -47,7 +47,7 @@ class WeatherAPI {
     lat,
     lon,
   }: Coordinates): Promise<GeocodingResponse[]> {
-    const url = this.createUrl(`${API_CONFIG.GEO}/reverse`, {
+    const url = this.createUrl(`${API_CONFIG.GEO_URL}/reverse`, {
       lat: lat.toString(),
       lon: lon.toString(),
       limit: "1",
@@ -56,7 +56,7 @@ class WeatherAPI {
   }
 
   async searchLocations(query: string): Promise<GeocodingResponse[]> {
-    const url = this.createUrl(`${API_CONFIG.GEO}/direct`, {
+    const url = this.createUrl(`${API_CONFIG.GEO_URL}/direct`, {
       q: query,
       limit: "5",
     });

@@ -1,7 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { useWeatherQuery } from "@/hooks/use-weather";
 import { useGeolocation } from "@/hooks/use-geolocation";
-import { WeatherSkeleton } from "./loading-skeleton";
+import WeatherSkeleton from "./loading-skeleton";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { AlertTriangle } from "lucide-react";
 
